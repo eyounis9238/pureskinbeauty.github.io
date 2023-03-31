@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+            background-color: #fbbca4;
+		}
+        header {
+    background-color:#f6bca4;
+    color:  #205a27;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+        nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul li a:hover {
+  color: gray;
+}
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #205a27;
+    text-decoration: none;
+  }
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			margin: 50px 0;
+		}
+		.col {
+			flex-basis: 45%;
+			margin-bottom: 20px;
+		}
+		.col img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+		.col p {
+			margin: 20px 0 0;
+			font-size: 18px;
+			line-height: 1.5;
+			text-align: justify;
+		}
+		.col:nth-child(2) {
+			flex-basis: 50%;
+		}
+		@media screen and (max-width: 768px) {
+			.row {
+				flex-direction: column;
+			}
+			.col {
+				flex-basis: 100%;
+			}
+			.col:nth-child(2) {
+				order: -1;
+			}
+		}
+	</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="abou us.html">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+    </header>
+	<div class="container">
+		<h1>About Us</h1>
+		<div class="row">
+			<div class="col">
+				<p>Welcome to our organic skincare brand! We believe that your skin deserves only the best and that's why we use only natural and organic ingredients in our products. Our mission is to provide you with effective skincare solutions that are gentle on your skin and the environment. We're passionate about promoting a healthy and sustainable lifestyle and want to help you achieve beautiful, glowing skin without compromising your values. 
+                    Thank you for choosing us and we hope to be a part of your skincare journey.</p>
+			</div>
+			<div class="col">
+				<img src="about us page.jpeg" alt="About Us Image">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
